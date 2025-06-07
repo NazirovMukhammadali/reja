@@ -86,14 +86,53 @@
 
 // TASK A
 
-function count(letter, word) {   // 2ta parametr
-    let count = 0;   // hisoblashni boshlash
-    for (let i = 0; i < word.length; i++) {   // wordni har bir harfini tekshirish
-        if (word[i] === letter) {   // letterga teng bolsa
-            count++;    // qiymatni oshiradi
-        }
-    }
-    return count;    // qiymat qaytaradi
-};
+// function count(letter, word) {   // 2ta parametr
+//     let count = 0;   // hisoblashni boshlash
+//     for (let i = 0; i < word.length; i++) {   // wordni har bir harfini tekshirish
+//         if (word[i] === letter) {   // letterga teng bolsa
+//             count++;    // qiymatni oshiradi
+//         }
+//     }
+//     return count;    // qiymat qaytaradi
+// };
 
-console.log(count("e", "engineer"));
+// console.log(count("e", "engineer"));
+
+
+// console.log("===== EXECUTE =====");
+
+// // DEFINE
+// function qoldiqliBolish(a, b, callback) {
+//     if (b === 0) {
+//         callback("Mahraj nolga teng bololmaydi", null);
+//     } else {
+//         callback(null, a % b);
+//     }
+// }
+
+// // CALL
+// qoldiqliBolish(100, 7, (err, data) => {
+//     if (err) console.log("Error:", err);
+//     else {
+//         console.log("data:", data);
+//     }
+// });
+
+// console.log("===== EXECUTE =====");
+
+// // DEFINE
+// function qoshish(a, b, callback) {
+//     if (b === 10) {
+//         callback("bizga 20 soni kerak!", null);
+//     } else {
+//         callback(null, a + b);
+//     }
+// }
+
+// // CALL
+// qoshish(1, 20, (err, data) => {
+//     if (err) console.log("Error:", err);
+//     else {
+//         console.log("data:", data);
+//     }
+// });
