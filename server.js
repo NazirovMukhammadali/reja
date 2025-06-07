@@ -32,7 +32,7 @@ app.post("/create-item", (req, res) => {
 });
 
 app.get('/author', (req, res) => {
-    res.render("author", { user: user });
+    res.render("author2", { user: user });
 });
 
 app.get("/", function (req, res) {

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="main_frame">
+
+        <div class="left_frame">
+
+            <!-- left-1 -->
+            <div class="left_1">
+                <div class="left_1-1">
+                    <img src="images/profile.png" width="156px" height="142px" alt="">
+                </div>
+                <div class="left_1-2">
+                    <%=user.name%>
+                </div>
+                <div class=" left_1-3">
+                    <%=user.profession%>
+                </div>
+                <div class="left-icons">
+                    <a class="link_herf" href="">
+                        <div class="icon">
+                            <img src="icon/Facebook.svg" class="icon-1" alt="">
+                        </div>
+                    </a>
+                    <a class="link_herf" href="">
+                        <div class="icon">
+                            <img src="icon/Instagram.svg" class="icon-1" alt="">
+                        </div>
+                    </a>
+                    <a class="link_herf" href="">
+                        <div class="icon">
+                            <img src="icon/Twitter.svg" class="icon-1" alt="">
+                        </div>
+                    </a>
+                    <a class="link_herf" href="">
+                        <div class="icon">
+                            <img src="icon/Linkeding.svg" class="icon-1" alt="">
+                        </div>
+                    </a>
+                    <a class="link_herf" href="">
+                        <div class="icon">
+                            <img src="icon/Youtube.svg" class="icon-1" alt="">
+                        </div>
+                    </a>
+                    <a class="link_herf" href="">
+                        <div class="icon">
+                            <img src="icon/Dribbble.svg" class="icon-1" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div style="margin: 30px 0px 5px 0px;" class="marginer"> <img src="icon/Line 6.svg" alt=""></div>
+
+            <!-- left-2 -->
+            <div class="left_2">
+                <div class="left_2-box">
+                    <h1>Age:</h1>
+                    <p>
+                        <%= user.age %>
+                    </p>
+                </div>
+                <div class="left_2-box">
+                    <h1>Residence:</h1>
+                    <p>
+                        <%= user.residence %>
+                    </p>
+                </div>
+                <div class="left_2-box">
+                    <h1>Address:</h1>
+                    <p>
+                        <%= user.address %>
+                    </p>
+                </div>
+                <div class="left_2-box">
+                    <h1>Profession:</h1>
+                    <p>
+                        <%= user.profession %>
+                    </p>
+                </div>
+            </div>
+
+            <div class="marginer"> <img src="icon/Line 6.svg" alt=""></div>
+
+            <!-- left-3 -->
+            <div class="left_3">
+                <h3 class="section-title">Languages</h3>
+
+                <div class="language-box">
+                    <p>
+                        <%= user.languages[0] %>
+                    </p>
+                    <span class="percent">100%</span>
+                </div>
+                <div> <img src="icon/Line.svg" class="icon-line" alt=""></div>
+
+                <div class="language-box">
+                    <p>
+                        <%= user.languages[1] %>
+                    </p>
+                    <span class="percent">80%</span>
+                </div>
+                <div> <img src="icon/Line.svg" class="icon-line" alt=""></div>
+
+                <div class="language-box">
+                    <p>
+                        <%= user.languages[2] %>
+                    </p>
+                    <span class="percent">70%</span>
+                </div>
+                <div> <img src="icon/Line.svg" class="icon-line" alt=""></div>
+
+                <div class="language-box">
+                    <p>
+                        <%= user.languages[3] %>
+                    </p>
+                    <span class="percent">60%</span>
+                </div>
+                <div> <img src="icon/Line.svg" class="icon-line" alt=""></div>
+            </div>
+
+            <div class="marginer"> <img src="icon/Line 6.svg" alt=""></div>
+
+            <!-- left-4 -->
+            <div class="left_4">
+                <h3 class="section-title">Skills</h3>
+                <div class="language-box">
+                    <p>
+                        <%= user.skills[0] %>
+                    </p>
+                    <span class="percent">90%</span>
+                </div>
+                <div> <img src="icon/Line.svg" class="icon-line" alt=""></div>
+
+                <div class="language-box">
+                    <p>
+                        <%= user.skills[1] %>
+                    </p>
+                    <span class="percent">85%</span>
+                </div>
+                <div> <img src="icon/Line.svg" class="icon-line" alt=""></div>
+
+                <div class="language-box">
+                    <p>
+                        <%= user.skills[2] %>
+                    </p>
+                    <span class="percent">80%</span>
+                </div>
+                <div> <img src="icon/Line.svg" class="icon-line" alt=""></div>
+
+                <div class="language-box">
+                    <p>
+                        <%= user.skills[3] %>
+                    </p>
+                    <span class="percent">75%</span>
+                </div>
+                <div> <img src="icon/Line.svg" class="icon-line" alt=""> </div>
+
+                <div class="language-box">
+                    <p>
+                        <%= user.skills[4] %>
+                    </p>
+                    <span class="percent">85%</span>
+                </div>
+                <div> <img src="icon/Line.svg" class="icon-line" alt=""> </div>
+            </div>
+
+            <div class="marginer"> <img src="icon/Line 6.svg" alt=""></div>
+
+            <!-- left-5 -->
+            <div class="left_5">
+                <h3 style="margin-left: 15px;" class="section-title">Extra Skills</h3>
+                <div class="left_5_box">
+                    <img src="images/Icons.png" alt="">
+                    <p>
+                        <%= user.extra_skills[0] %>
+                    </p>
+                </div>
+
+                <div class="left_5_box">
+                    <img src="images/Icons.png" alt="">
+                    <p>
+                        <%= user.extra_skills[1] %>
+                    </p>
+                </div>
+
+                <div class="left_5_box">
+                    <img src="images/Icons.png" alt="">
+                    <p>
+                        <%= user.extra_skills[2] %>
+                    </p>
+                </div>
+
+                <div class="left_5_box">
+                    <img src="images/Icons.png" alt="">
+                    <p>
+                        <%= user.extra_skills[3] %>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <!-- chap continer tugadi -->
+
+
+        <!-- Midd frame start -->
+        <div class="midd-frame">
+            <!-- mid box -->
+            <div class="midd-frame-1">
+                <div>
+                    <h1 class="intro-title">
+                        Doctor neurologists <br> in OHSU Hospital
+                    </h1>
+                    <p class="intro-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Et, volutpat feugiat
+                        placerat
+                        lobortis. Natoque rutrum <br> semper sed suspendisse nunc lectus.
+                    </p>
+                    <button class="intro-btn">
+                        HIRE ME >
+                    </button>
+                </div>
+
+                <div class="midd-frame-1-image">
+                    <img src="images/Your Image 1.png" alt="Doctor Profile Image">
+                </div>
+            </div>
+
+
+            <!-- mid btn box -->
+            <div class="midd-frame-2">
+
+                <div class="midd-frame-2-title">
+                    <h2 style="font-family: Inter; font-size: 32px;">
+                        My services
+                    </h2>
+                    <p style="text-align: center; font-size: 15px;" class="midd_frame-2-desc">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor <br> do amet sint. Velit
+                        officia
+                        consequat duis enim velit<br> mollit ipsum
+                    </p>
+                </div>
+
+                <div class="midd-frame-2-box">
+                    <div style="background-color: white;" class="service">
+                        <img src="images/Icons_coding.png" alt="Doctor Profile Image" class="services-1-img">
+                        <h3 class="service-title">Web development</h3>
+                        <div class="service-desc">Blog, E-Commerce</div>
+                    </div>
+
+                    <div style="background-color: white;" class="service">
+                        <img src="images/Icons_illustration.png" alt="Doctor Profile Image" class="services-1-img">
+                        <h3 class="service-title">UI/UX Design</h3>
+                        <div class="service-desc">Mobile app, website design</div>
+                    </div>
+
+                    <div style="background-color: white;" class="service">
+                        <img src="images/Icons_Microphone.png" alt="Doctor Profile Image" class="services-1-img">
+                        <h3 class="service-title">Sound Design</h3>
+                        <div class="service-desc">Voice Over, Beat Making</div>
+                    </div>
+                </div>
+
+                <div class="midd-frame-2-box">
+                    <div style="background-color: white;" class="service">
+                        <img src="images/Icons_game-development.png" alt="Doctor Profile Image" class="services-1-img">
+                        <h3 class="service-title">Game Design</h3>
+                        <div class="service-desc">Character Design, Props & Objects</div>
+                    </div>
+
+                    <div style="background-color: white;" class="service">
+                        <img src="images/Icons_Photographer.png" alt="Doctor Profile Image" class="services-1-img">
+                        <h3 class="service-title">Photography</h3>
+                        <div class="service-desc">Portrait, product photography</div>
+                    </div>
+
+                    <div style="background-color: white;" class="service">
+                        <h3 class="service-title-2">Advertising</h3>
+                        <div class="service-desc">
+                            Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Vitae <br> nulla diam
+                            in
+                            ac dictum a urna <br> viverra morbi.
+                        </div>
+                        <a style="color: chocolate;" class="service-link" href="Doctor Profile Image">Order now ></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Right frame start  -->
+        <div class="right-frame">
+            <img src="images/Contrast.png" alt="Doctor Profile Image">
+
+            <div class="right-frame-menu">
+                <img class="right-icons" src="images/Home.png" alt="Doctor Profile Image">
+                <img class="right-icons" src="images/Service.png" alt="Doctor Profile Image">
+                <img class="right-icons" src="images/Cv.png" alt="Doctor Profile Image">
+                <img class="right-icons" src="images/Portfolio.png" alt="Doctor Profile Image">
+                <img class="right-icons" src="images/Blog.png" alt="Doctor Profile Image">
+                <img class="right-icons" src="images/Contact.png" alt="Doctor Profile Image">
+            </div>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
