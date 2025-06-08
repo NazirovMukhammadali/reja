@@ -136,3 +136,21 @@
 //         console.log("data:", data);
 //     }
 // });
+
+// TASK B
+
+// function countDigits(qiymat) {
+//     let count = 0;
+//     qiymat.split('').forEach(element => {
+//         if (element >= '0' && element <= '9') {
+//             count++;
+//         }
+
+
+//     });
+
+//     return count;
+// }
+// console.log(countDigits("ab12cd34"));
+// console.log(countDigits("ab12cd34if56"));
+// console.log(countDigits("ab12cd3420230"));
