@@ -154,3 +154,16 @@
 // console.log(countDigits("ab12cd34"));
 // console.log(countDigits("ab12cd34if56"));
 // console.log(countDigits("ab12cd3420230"));
+
+
+// TASK C
+
+function checkContent(string1, string2) {
+    let str1 = string1.split("").sort().join(""); // sort argument olmaydi
+    let str2 = string2.split("").sort().join("");
+    return str1 === str2;
+}
+
+console.log(checkContent("mitgroup", "groupmit"));
+console.log(checkContent("mitgroup", "groupmi1"));
+console.log(checkContent("mitgrou", "groupmi"));
