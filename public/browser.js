@@ -4,7 +4,7 @@ function itemTemplate(item) {
     return `<li 
     class="list-group-item list-group-item-info d-flex align-items-center justify-content-between">
           <span class="item-text">
-       ${item._reja}
+       ${item.reja}
           </span>
           <div>
             <button data-id="${item._id}" class="edit-me btn btn-secondary btn-sm mr-1">
@@ -44,7 +44,7 @@ document.addEventListener("click", function (e) {
         if (confirm("O'chirmoqchimisiz?")) {
             axios
                 .post("/delete-item", { id: e.target.getAttribute("data-id") })
-                .then((response) => {
+                .then((respose) => {
                     // e.target.parentElement.remove();  // bunda faqat <li> ni o'chiradi
                     e.target.closest("li").remove();
                 })
