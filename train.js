@@ -158,12 +158,60 @@
 
 // TASK C
 
-function checkContent(string1, string2) {
-    let str1 = string1.split("").sort().join(""); // sort argument olmaydi
-    let str2 = string2.split("").sort().join("");
-    return str1 === str2;
-}
+// function checkContent(string1, string2) {
+//     let str1 = string1.split("").sort().join(""); // sort argument olmaydi
+//     let str2 = string2.split("").sort().join("");
+//     return str1 === str2;
+// }
 
-console.log(checkContent("mitgroup", "groupmit"));
-console.log(checkContent("mitgroup", "groupmi1"));
-console.log(checkContent("mitgrou", "groupmi"));
+// console.log(checkContent("mitgroup", "groupmit"));
+// console.log(checkContent("mitgroup", "groupmi1"));
+// console.log(checkContent("mitgrou", "groupmi"));
+
+
+// TASK D
+
+class Shop {
+    constructor(non, lagmon, cola) {
+        this.mahsulotlar = {
+            non,
+            lagmon,
+            cola
+        };
+    };
+
+    vaqt() {
+        const h = new Date();
+        const s = h.getHours();
+        const m = h.getMinutes();
+        return `${s}:${m < 10 ? '0' + m : m}`;
+    };
+
+    qoldiq() {
+        console.log(`${this.vaqt()} ${this.mahsulotlar.non}ta non, ${this.mahsulotlar.lagmon}ta lagmon va ${this.mahsulotlar.cola}ta cola mavjud!`);
+    };
+
+    sotish(nomi, soni) {
+        if (nomi === 'non' || nomi === 'lagmon' || nomi === 'cola') {
+            this.mahsulotlar[nomi] -= soni;
+            console.log(`${this.vaqt()} ${soni}ta ${nomi} sotildi.`);
+        };
+    };
+
+
+    qabul(nomi, soni) {
+        if (nomi === 'non' || nomi === 'lagmon' || nomi === 'cola') {
+            this.mahsulotlar[nomi] += soni;
+            console.log(`${this.vaqt()} ${soni}ta ${nomi} qabul qilindi.`);
+        };
+    };
+};
+
+
+
+const shop1 = new Shop(10, 10, 10);
+shop1.qoldiq();
+shop1.sotish('non', 5);
+shop1.sotish('lagmon', 1);
+shop1.qabul('cola', 1);
+shop1.qoldiq();
