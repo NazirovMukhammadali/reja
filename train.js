@@ -171,47 +171,58 @@
 
 // TASK D
 
-class Shop {
-    constructor(non, lagmon, cola) {
-        this.mahsulotlar = {
-            non,
-            lagmon,
-            cola
-        };
-    };
+// class Shop {
+//     constructor(non, lagmon, cola) {
+//         this.mahsulotlar = {
+//             non,
+//             lagmon,
+//             cola
+//         };
+//     };
 
-    vaqt() {
-        const h = new Date();
-        const s = h.getHours();
-        const m = h.getMinutes();
-        return `${s}:${m < 10 ? '0' + m : m}`;
-    };
+//     vaqt() {
+//         const h = new Date();
+//         const s = h.getHours();
+//         const m = h.getMinutes();
+//         return `${s}:${m < 10 ? '0' + m : m}`;
+//     };
 
-    qoldiq() {
-        console.log(`${this.vaqt()} ${this.mahsulotlar.non}ta non, ${this.mahsulotlar.lagmon}ta lagmon va ${this.mahsulotlar.cola}ta cola mavjud!`);
-    };
+//     qoldiq() {
+//         console.log(`${this.vaqt()} ${this.mahsulotlar.non}ta non, ${this.mahsulotlar.lagmon}ta lagmon va ${this.mahsulotlar.cola}ta cola mavjud!`);
+//     };
 
-    sotish(nomi, soni) {
-        if (nomi === 'non' || nomi === 'lagmon' || nomi === 'cola') {
-            this.mahsulotlar[nomi] -= soni;
-            console.log(`${this.vaqt()} ${soni}ta ${nomi} sotildi.`);
-        };
-    };
-
-
-    qabul(nomi, soni) {
-        if (nomi === 'non' || nomi === 'lagmon' || nomi === 'cola') {
-            this.mahsulotlar[nomi] += soni;
-            console.log(`${this.vaqt()} ${soni}ta ${nomi} qabul qilindi.`);
-        };
-    };
-};
+//     sotish(nomi, soni) {
+//         if (nomi === 'non' || nomi === 'lagmon' || nomi === 'cola') {
+//             this.mahsulotlar[nomi] -= soni;
+//             console.log(`${this.vaqt()} ${soni}ta ${nomi} sotildi.`);
+//         };
+//     };
 
 
+//     qabul(nomi, soni) {
+//         if (nomi === 'non' || nomi === 'lagmon' || nomi === 'cola') {
+//             this.mahsulotlar[nomi] += soni;
+//             console.log(`${this.vaqt()} ${soni}ta ${nomi} qabul qilindi.`);
+//         };
+//     };
+// };
 
-const shop1 = new Shop(10, 10, 10);
-shop1.qoldiq();
-shop1.sotish('non', 5);
-shop1.sotish('lagmon', 1);
-shop1.qabul('cola', 1);
-shop1.qoldiq();
+
+
+// const shop1 = new Shop(10, 10, 10);
+// shop1.qoldiq();
+// shop1.sotish('non', 5);
+// shop1.sotish('lagmon', 1);
+// shop1.qabul('cola', 1);
+// shop1.qoldiq();
+
+
+
+// TASK E
+
+function getReverse(str) {
+    return [...str].reverse().join("");   // arrayga aylantirish modern usulda [...]
+}
+
+console.log(getReverse("java"));
+console.log(getReverse("12345"));
