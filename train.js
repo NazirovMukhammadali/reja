@@ -220,9 +220,34 @@
 
 // TASK E
 
-function getReverse(str) {
-    return [...str].reverse().join("");   // arrayga aylantirish modern usulda [...]
-}
+// function getReverse(str) {
+//     return [...str].reverse().join("");   // arrayga aylantirish modern usulda [...]
+// }
 
-console.log(getReverse("java"));
-console.log(getReverse("12345"));
+// console.log(getReverse("java"));
+// console.log(getReverse("12345"));
+
+
+
+// TASK F
+
+function getReverse(matn) {
+    let korilgan = "";
+
+    for (let i = 0; i < matn.length; i++) {
+        let harf = matn[i];
+
+        if (korilgan.includes(harf)) {
+            return true;
+        }
+        korilgan += harf;
+
+    }
+    return false;
+};
+
+
+console.log(getReverse("osmon"))
+console.log(getReverse("text"))
+console.log(getReverse("matn"))
+console.log(getReverse("yozuv"))
